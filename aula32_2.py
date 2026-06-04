@@ -17,7 +17,9 @@ primeiro_nome = input('\nDigite o seu primeiro nome: ')
 
 primeiro_nome_tamanho = len(primeiro_nome)
 
-if primeiro_nome_tamanho <= 4:
+if primeiro_nome_tamanho <= 1:
+    print('O nome não pode ser vazio! Por gentileza execute novamente.')
+elif primeiro_nome_tamanho <= 4:
     print('Seu nome é curto')
 elif primeiro_nome_tamanho >= 5 and primeiro_nome_tamanho <= 6:
     print('Seu nome é normal')
